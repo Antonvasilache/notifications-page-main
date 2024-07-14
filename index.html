@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <title>Frontend Mentor | Notifications page</title>
+  </head>
+  <body class="body">
+    <div class="container-wrapper">
+      <div class="container">
+        <header class="header">
+          <h1 class="header-h1 header-font">
+            Notifications
+            <div class="notifications-number body-font-bold">3</div>
+          </h1>
+          <button class="header-read body-font">Mark all as read</button>
+        </header>
+        <main class="notifications">
+          <article class="notification unread">
+            <div class="avatar-container">
+              <img
+                src="/assets/images/avatar-mark-webber.webp"
+                alt="avatar Mark Webber"
+                class="avatar"
+              />
+            </div>
+            <div class="notification-content">
+              <div class="notification-content-text">
+                <strong class="avatar-name body-font-bold">Mark Webber</strong>
+                <span> reacted to your recent post</span>
+                <strong class="body-font-bold"
+                  >My first tournament today!</strong
+                >
+                <svg
+                  width="8"
+                  height="8"
+                  viewBox="0 0 8 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="unread-dot"
+                >
+                  <circle cx="4" cy="4" r="4" fill="#F65552" />
+                </svg>
+              </div>
+              <p class="notification-content-timestamp">1m ago</p>
+            </div>
+          </article>
+          <article class="notification unread">
+            <div class="avatar-container">
+              <img
+                src="/assets/images/avatar-angela-gray.webp"
+                alt="avatar Angela Gray"
+                class="avatar"
+              />
+            </div>
+            <div class="notification-content">
+              <div class="notification-content-text">
+                <strong class="avatar-name body-font-bold">Angela Gray</strong>
+                <span> followed you </span>
+                <svg
+                  width="8"
+                  height="8"
+                  viewBox="0 0 8 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="unread-dot"
+                >
+                  <circle cx="4" cy="4" r="4" fill="#F65552" />
+                </svg>
+              </div>
+              <p class="notification-content-timestamp">5m ago</p>
+            </div>
+          </article>
+          <article class="notification unread">
+            <div class="avatar-container">
+              <img
+                src="/assets/images/avatar-jacob-thompson.webp"
+                alt="avatar Jacob Thompson"
+                class="avatar"
+              />
+            </div>
+            <div class="notification-content">
+              <div class="notification-content-text">
+                <strong class="avatar-name body-font-bold"
+                  >Jacob Thompson</strong
+                >
+                <span> has joined your group </span>
+                <strong class="group-name body-font-bold">Chess Club</strong>
+                <svg
+                  width="8"
+                  height="8"
+                  viewBox="0 0 8 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="unread-dot"
+                >
+                  <circle cx="4" cy="4" r="4" fill="#F65552" />
+                </svg>
+              </div>
+              <p class="notification-content-timestamp">1 day ago</p>
+            </div>
+          </article>
+          <article class="notification">
+            <div class="avatar-container">
+              <img
+                src="/assets/images/avatar-rizky-hasanuddin.webp"
+                alt="avatar Rizky Hasanuddin"
+                class="avatar"
+              />
+            </div>
+            <div class="notification-content">
+              <div class="notification-content-text">
+                <strong class="avatar-name body-font-bold"
+                  >Rizky Hasanuddin</strong
+                >
+                <span> sent you a private message</span>
+              </div>
+              <p class="notification-content-timestamp">5 days ago</p>
+            </div>
+            <p class="private-message">
+              Hello, thanks for setting up the Chess Club. I've been a member
+              for a few weeks now and I'm already having lots of fun and
+              improving my game.
+            </p>
+          </article>
+          <article class="notification columns-3">
+            <div class="avatar-container">
+              <img
+                src="/assets/images/avatar-kimberly-smith.webp"
+                alt="Kimberly Smith"
+                class="avatar"
+              />
+            </div>
+            <div class="notification-content">
+              <div class="notification-content-text">
+                <strong class="avatar-name body-font-bold"
+                  >Kimberly Smith</strong
+                >
+                <span> commented on your picture</span>
+              </div>
+              <p class="notification-content-timestamp">1 week ago</p>
+            </div>
+            <div class="commented-img-container">
+              <img
+                src="/assets/images/image-chess.webp"
+                alt="Chess image"
+                class="commented-img"
+              />
+            </div>
+          </article>
+          <article class="notification">
+            <div class="avatar-container">
+              <img
+                src="/assets/images/avatar-nathan-peterson.webp"
+                alt="avatar Nathan Peterson"
+                class="avatar"
+              />
+            </div>
+            <div class="notification-content">
+              <div class="notification-content-text block">
+                <strong class="avatar-name body-font-bold"
+                  >Nathan Peterson</strong
+                >
+                <span> reacted to your recent post</span>
+                <strong class="body-font-bold"
+                  >5 end-game strategies to increase your win rate
+                </strong>
+              </div>
+              <p class="notification-content-timestamp">2 weeks ago</p>
+            </div>
+          </article>
+          <article class="notification">
+            <div class="avatar-container">
+              <img
+                src="/assets/images/avatar-anna-kim.webp"
+                alt="avatar Anna Kim"
+                class="avatar"
+              />
+            </div>
+            <div class="notification-content">
+              <div class="notification-content-text">
+                <strong class="avatar-name body-font-bold">Anna Kim</strong>
+                <span>left the group</span>
+                <strong class="group-name body-font-bold">Chess Club</strong>
+              </div>
+              <p class="notification-content-timestamp">2 weeks ago</p>
+            </div>
+          </article>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
